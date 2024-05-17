@@ -3,11 +3,13 @@
 This repository contains a template project for [Next.js](https://nextjs.org/).
 
 Uses:
+
 - Next.js 14 (with App Router)
 - Typescript
 - Tailwind CSS
 
 ## System Requirements:
+
 - Node.js 18.17 or later
 
 ## Getting Started
@@ -15,6 +17,7 @@ Uses:
 Add a `.env` file in the root directory, copy the contents in `.env.example` and define the values according to your project.
 
 Install dependencies:
+
 ```bash
 npm install
 ```

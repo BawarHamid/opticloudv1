@@ -40,7 +40,7 @@ const Sidebar: React.FC<SidebarProps> = ({ user }) => {
                 { "bg-primary-600": isActive }
               )}
             >
-              <div className="relative size-6">
+              <div className="relative size-6 items-center">
                 <Image
                   src={links.imgUrl}
                   alt={links.label}
@@ -58,9 +58,6 @@ const Sidebar: React.FC<SidebarProps> = ({ user }) => {
               >
                 {links.label}
               </p>
-              {/* <p className={cn("sidebar-label", { "!text-white": isActive })}>
-                {links.label}
-              </p> */}
             </Link>
           );
         })}

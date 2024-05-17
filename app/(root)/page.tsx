@@ -1,3 +1,5 @@
+import ActiveSessionCard from "@/components/data/cards/ActiveSessionCard";
+import ConsumptionCard from "@/components/data/cards/ConsumptionCard";
 import HeaderBox from "@/components/headers/HeaderBox";
 import React from "react";
 
@@ -12,6 +14,9 @@ const Overview = () => {
             title="Welcome"
             user={loggedIn?.firstName || "Guest"}
           />
+
+          {/* <ActiveSessionCard /> */}
+          <ConsumptionCard />
         </header>
       </div>
     </section>

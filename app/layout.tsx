@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Opticloud",
   description: "Optilogic cloud v1",
   icons: {
-    icon: "/icons/logo-white.png",
+    icon: "/icons/tandhjul.png",
   },
 };
 

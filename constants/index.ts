@@ -15,9 +15,9 @@ export const sidebarLinks = [
     imgUrl: "/icons/Home.svg",
   },
   {
-    label: "Reports",
-    route: "/reports",
-    imgUrl: "/icons/Home.svg",
+    label: "Calender",
+    route: "/calender",
+    imgUrl: "/icons/Calender.svg",
   },
   {
     label: "Items",

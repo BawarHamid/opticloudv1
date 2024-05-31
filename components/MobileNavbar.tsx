@@ -28,13 +28,13 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ user }) => {
             alt="sheet icon"
             width={24}
             height={24}
-            className="cursor-pointer"
+            className="cursor-pointer brightness-[5]"
           />
         </SheetTrigger>
-        <SheetContent side="left" className="border-none bg-white">
+        <SheetContent side="left" className="border-none bg-sidebar-1">
           <Link href={"/"} className="flex cursor-pointer items-center gap-2">
             <Image
-              src={"/icons/logo.png"}
+              src={"/icons/logo-white.png"}
               alt="Optilogic Logo"
               width={100}
               height={100}
@@ -54,10 +54,10 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ user }) => {
                         key={links.label}
                         className={cn(
                           "flex gap-3 items-center p-4 rounded-lg w-full max-w-60",
-                          { "bg-primary-600": isActive }
+                          { "bg-primary-400": isActive }
                         )}
                       >
-                        <div className="relative size-6">
+                        <div className="relative size-6 brightness-[3]">
                           <Image
                             src={links.imgUrl}
                             alt={links.label}
@@ -70,7 +70,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ user }) => {
                         </div>
                         <p
                           className={cn(
-                            "text-[16px] font-semibold text-black",
+                            "text-[16px] font-semibold text-white",
                             { "!text-white": isActive }
                           )}
                         >

@@ -1,5 +1,7 @@
+import BarChart from "@/components/charts/BarChart";
+import LineChart from "@/components/charts/LineChart";
 import ActiveSessionCard from "@/components/data/cards/ActiveSessionCard";
-import ConsumptionCard from "@/components/data/cards/ConsumptionCard";
+import ChartCards from "@/components/data/cards/ChartCards";
 import HeaderBox from "@/components/headers/HeaderBox";
 import React from "react";
 
@@ -16,7 +18,13 @@ const Overview = () => {
           />
 
           {/* <ActiveSessionCard /> */}
-          <ConsumptionCard />
+          <div className="flex col space-x-6">
+            <ChartCards chart={<BarChart />} title="Consumption:" />
+            <ChartCards chart={<BarChart />} title="Consumption:" />
+          </div>
+          <div className=" mt-6">
+            <ChartCards chart={<LineChart />} title="Statistics:" />
+          </div>
         </header>
       </div>
     </section>

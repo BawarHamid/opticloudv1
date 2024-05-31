@@ -10,10 +10,10 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
     <main className="flex h-screen w-full">
       <Sidebar />
       <div className="flex size-full flex-col">
-        <div className="flex h-16 items-center justify-between p-5 shadow-creditCard sm:p-8 md:hidden">
+        <div className="flex h-16 items-center justify-between p-5 shadow-creditCard sm:p-8 md:hidden bg-sidebar-1">
           <Link href={"/"} className="flex items-center">
             <Image
-              src={"/icons/logo.png"}
+              src={"/icons/logo-white.png"}
               alt="small-device logo"
               width={65}
               height={65}

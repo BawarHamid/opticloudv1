@@ -1,6 +1,6 @@
 "use client";
 
-import { barChartData } from "@/lib/data/dummydata";
+import { dummyDataset1 } from "@/lib/data/dummydata";
 import {
   Chart as ChartJS,
   ArcElement,
@@ -19,15 +19,15 @@ const BarChart = () => {
     datasets: [
       {
         label: "Total Consumption",
-        data: barChartData.map((data) => data.total),
+        data: dummyDataset1.map((data) => data.total),
         backgroundColor: "#0e7dbb",
-        borderRadius: 8,
+        borderRadius: 6,
       },
     ],
-    labels: barChartData.map((data) => data.month),
+    labels: dummyDataset1.map((data) => data.month),
   };
   return (
-    <div className="w-[500xp] h-[500px]">
+    <div className="w-[400px] h-[300px] flex justify-center items-center px-5">
       <Bar data={data} />
     </div>
   );

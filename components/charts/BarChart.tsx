@@ -1,5 +1,4 @@
 "use client";
-
 import { dummyDataset1 } from "@/lib/data/dummydata";
 import {
   Chart as ChartJS,

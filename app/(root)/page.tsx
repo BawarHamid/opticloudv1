@@ -3,6 +3,10 @@ import BrushBarChart from "@/components/charts/BrushBarChart";
 import LineBarAreaComposedChart from "@/components/charts/LineBarAreaComposedChart";
 import LineChart from "@/components/charts/LineChart";
 import RechartsLineChart from "@/components/charts/RechartsLineChart";
+import {
+  SolarInverterECharts,
+  SolarInverterReCharts,
+} from "@/components/charts/SolarChart";
 import ActiveSessionCard from "@/components/data/cards/ActiveSessionCard";
 import ChartCards from "@/components/data/cards/ChartCards";
 import HeaderBox from "@/components/headers/HeaderBox";
@@ -21,9 +25,15 @@ const Overview = () => {
           />
 
           {/* <ActiveSessionCard /> */}
-          <div className="flex col space-x-6">
+          {/* <div className="flex col space-x-6">
             <ChartCards chart={<BarChart />} title="Consumption:" />
             <ChartCards chart={<BarChart />} title="Consumption:" />
+          </div> */}
+          <div className="flex mt-6">
+            <SolarInverterECharts />
+          </div>
+          <div className="flex mt-6">
+            <SolarInverterReCharts />
           </div>
           <div className="flex mt-6">
             <ChartCards chart={<LineChart />} title="Statistics:" />

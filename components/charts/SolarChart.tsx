@@ -9,6 +9,8 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  AreaChart,
+  Area,
 } from "recharts";
 
 export function SolarInverterECharts() {
@@ -68,7 +70,7 @@ export function SolarInverterECharts() {
     <div className="w-full h-full">
       <ReactECharts
         option={option}
-        style={{ height: "500px", width: "100%" }}
+        style={{ height: "400px", width: "800px" }}
       />
     </div>
   );
@@ -99,20 +101,31 @@ const data = [
   { time: "21:00", production: 0, consumption: 190 },
   { time: "22:00", production: 0, consumption: 180 },
   { time: "23:00", production: 0, consumption: 170 },
+  { time: "23:59", production: 0, consumption: 120 },
 ];
 
 export function SolarInverterReCharts() {
   return (
     <div className="w-full h-full">
-      <LineChart width={800} height={400} data={data}>
+      <AreaChart width={800} height={400} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="time" />
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="production" stroke="blue" />
-        <Line type="monotone" dataKey="consumption" stroke="red" />
-      </LineChart>
+        <Area
+          type="monotone"
+          dataKey="production"
+          stroke="#8CB0FA"
+          fill="#8CB0FA"
+        />
+        <Area
+          type="monotone"
+          dataKey="consumption"
+          stroke="#EB9FA5"
+          fill="#EB9FA5"
+        />
+      </AreaChart>
     </div>
   );
 }

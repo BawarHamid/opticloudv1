@@ -7,9 +7,10 @@ import {
   SolarInverterECharts,
   SolarInverterReCharts,
 } from "@/components/charts/SolarChart";
-import ActiveSessionCard from "@/components/data/cards/ActiveSessionCard";
 import ChartCards from "@/components/data/cards/ChartCards";
 import HeaderBox from "@/components/headers/HeaderBox";
+import InverterAnimation from "@/components/InverterAnimation";
+import Image from "next/image";
 import React from "react";
 
 const Overview = () => {
@@ -29,19 +30,22 @@ const Overview = () => {
             <ChartCards chart={<BarChart />} title="Consumption:" />
             <ChartCards chart={<BarChart />} title="Consumption:" />
           </div> */}
-          <div className="flex mt-6">
-            <SolarInverterECharts />
+          <div className="flex my-16 justify-center ">
+            {/* <ChartCards title="Flow Chart" chart={<InverterAnimation />} /> */}
+            <div className="border bg-primary-50 shadow-lg rounded-2xl p-6 w-full h-[430px]">
+              <InverterAnimation />
+            </div>
           </div>
           <div className="flex mt-6">
             <SolarInverterReCharts />
           </div>
           <div className="flex mt-6">
-            <ChartCards chart={<LineChart />} title="Statistics:" />
+            <SolarInverterECharts />
           </div>
           <div className="flex mt-6">
             <ChartCards chart={<BrushBarChart />} title="BrushBarChart:" />
           </div>
-          <div className="flex col space-x-6 mt-6">
+          <div className="flex col space-x-12 mt-6">
             <ChartCards
               chart={<LineBarAreaComposedChart />}
               title="LineBarAreaComposedChart:"

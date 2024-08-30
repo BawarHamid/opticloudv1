@@ -47,7 +47,7 @@ const PortView: React.FC = () => {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 1000 600"
-          // transform="rotate(-90 14 40)"
+          transform="rotate(-90 14 40)"
           // transform="rotate(-90 28 38)"
         >
           <image href="/rungstedny.png" width="100%" height="100%" />

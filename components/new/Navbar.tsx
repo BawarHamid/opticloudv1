@@ -10,7 +10,7 @@ export default function Navbar() {
     <div className="flex items-center justify-between p-4">
       {/* SEARCH BAR */}
       <div className="hidden md:flex items-center gap-2 text-xs rounded-full ring-[1.5px] ring-gray-300 px-2">
-        <CgSearch className="size-5 text-gray-400" />
+        <CgSearch className="size-5 text-gray-400 cursor-pointer" />
         <input
           className="w-[200px] p-2 bg-transparent outline-none"
           type="text"
